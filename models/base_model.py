@@ -43,7 +43,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """This script Returns a dictionary containing all keys/values of __dict__"""
+        """Returning a dictionary containing all keys/values of __dict__"""
 
         formated_dict = self.__dict__.copy()
         formated_dict['created_at'] = formated_dict['created_at'].isoformat()
