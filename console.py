@@ -19,7 +19,8 @@ def parse(arg):
     curly_braces = re.search(r"\{(.*?)\}", arg)
     brackets = re.search(r"\[(.*?)\]", arg)
     if curly_braces is None:
-        if brackets is None:            return [i.strip(",") for i in split(arg)]
+        if brackets is None:
+            return [i.strip(",") for i in split(arg)]
         else:
             lexer = split(arg[:brackets.span()[0]])
             retl = [i.strip(",") for i in lexer]
@@ -52,13 +53,13 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         """
-            Nothing happens when recieving an empty line
+            Nothing happens when receiving an empty line
         """
         pass
 
     def default(self, arg):
         """
-            Invalid default behaviour for cmd when it is input
+            Invalid default behavior for cmd when it is input
         """
         argdict = {
             "all": self.do_all,
