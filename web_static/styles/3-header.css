@@ -1,0 +1,15 @@
+header {
+    background-color: #FF0000;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    color: white;
+}
+
+.logo {
+    vertical-align: middle;
+}

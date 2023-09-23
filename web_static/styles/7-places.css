@@ -1,0 +1,45 @@
+.places {
+    margin-top: 30px;
+}
+
+.places h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.place-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Distribute the articles evenly */
+}
+
+.place-listing {
+    width: calc(50% - 20px); /* 50% width with a 20px gap in between */
+    padding: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.centered-place {
+    width: calc(100% - 20px); /* Full width with a 20px gap */
+    padding: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 20px; /* Add space between the two places and the third one */
+}
+
+.place-listing h2,
+.centered-place h2 {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .place-listing {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
